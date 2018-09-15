@@ -26,7 +26,7 @@ host('128.199.206.218')
     ->set('deploy_path', '~/{{application}}')
     ->user('deployer')
     ->identityFile('~/.ssh/deployer')
-    ->set('deploy_path', '/var/www/larastart');
+    ->set('deploy_path', '/var/www');
     
 // Tasks
 
