@@ -23,10 +23,10 @@ add('writable_dirs', []);
 // Hosts
 
 host('128.199.206.218')
-    ->set('deploy_path', 'larastert')
+    ->set('deploy_path', 'larastart')
     ->user('deployer')
     ->identityFile('~/.ssh/deployer')
-    ->set('deploy_path', '/var/www');
+    ->set('deploy_path', '/var/www/larastart');
     
 // Tasks
 
@@ -39,5 +39,5 @@ after('deploy:failed', 'deploy:unlock');
 
 // Migrate database before symlink new release.
 
-before('deploy:symlink', 'artisan:migrate');
+//before('deploy:symlink', 'artisan:migrate');
 
