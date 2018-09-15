@@ -23,7 +23,7 @@ add('writable_dirs', []);
 // Hosts
 
 host('128.199.206.218')
-    ->set('deploy_path', '~/{{application}}')
+    ->set('deploy_path', 'larastert')
     ->user('deployer')
     ->identityFile('~/.ssh/deployer')
     ->set('deploy_path', '/var/www');
